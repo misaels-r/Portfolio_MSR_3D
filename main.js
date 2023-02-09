@@ -53,7 +53,7 @@ scene.add(pointLight, ambientLight);
 
 //avatar
 
-const MSRTexture = new THREE.TextureLoader().load('assets/MSR.png');
+const MSRTexture = new THREE.TextureLoader().load('public/assets/MSR.png');
 
 const MSR = new THREE.Mesh(new THREE.PlaneGeometry( 6, 6 ), new THREE.MeshBasicMaterial({ map: MSRTexture }));
 
@@ -63,8 +63,8 @@ scene.add(MSR);
 
 //moon 
 
-const moonTexture = new THREE.TextureLoader().load('assets/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('assets/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('public/assets/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('public/assets/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
